@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title> 
+		<meta charset="UTF-8" />
+
+		<link rel="stylesheet" href="estilo.css" />
+
+		<script src="jogo.js"></script>
+	</head>
+
+	<body onresize="ajustaTamanhoPalcoJogo()">
+
+		<!-- Div que representa o painel do jogo -->
+		<div class="painel">
+
+			<!-- Div que contém as vidas com imagens de pokebolas -->
+			<div class="vidas">
+				<img id="v1" src="imagens/pokebola_cheia.png" />
+				<img id="v2" src="imagens/pokebola_cheia.png" />
+				<img id="v3" src="imagens/pokebola_cheia.png" />
+			</div>
+
+			<!-- Div que exibe o cronômetro com o tempo restante -->
+			<div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+
+		</div>
+
+		<!-- Script JavaScript embutido no HTML -->
+		<script>
+			document.getElementById('cronometro').innerHTML = tempo
+
+			var criaMosca = setInterval(function() { 
+				posicaoRandomica()
+			}, criaMosquitoTempo)
+		</script>
+	</body>
+</html>

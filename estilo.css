@@ -1,0 +1,60 @@
+/* Define o cursor personalizado para a página */
+html {
+	cursor: url(imagens/pega_pokemon.png) 30 30, auto;
+}
+
+/* Estilos para o corpo da página */
+body {
+	background-image: url(imagens/fundo.png.png); /* Imagem de fundo */
+	background-repeat: no-repeat; /* Não repete a imagem de fundo */
+	background-size: 100%; /* Ajusta o tamanho da imagem de fundo para cobrir 100% da largura e altura */
+}
+
+/* Estilos para as classes de mosquitos com diferentes tamanhos */
+.mosquito1 {
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2 {
+	width: 70px;
+	height: 70px;
+}
+
+.mosquito3 {
+	width: 90px;
+	height: 90px;
+}
+
+/* Estilos para os lados A e B, utilizando a propriedade transform para espelhar horizontalmente */
+.ladoA {
+	transform: scaleX(1); /* Não aplica espelhamento horizontal (escala em X) */
+}
+
+.ladoB {
+	transform: scaleX(-1); /* Aplica espelhamento horizontal invertido (escala em X com valor negativo) */
+}
+
+/* Estilos para o painel do jogo */
+.painel {
+	position: absolute; /* Posicionamento absoluto em relação ao elemento pai mais próximo */
+	width: 190px; /* Largura do painel */
+	padding: 10px; /* Espaçamento interno do painel */
+	left: 0px; /* Distância da borda esquerda da página */
+	bottom: 0px; /* Distância da borda inferior da página */
+	border-top: solid 1px #fff; /* Borda superior sólida com a cor branca */
+	background-color: #fff; /* Cor de fundo branca */
+	opacity: 0.7; /* Opacidade do painel */
+}
+
+/* Estilos para o elemento de vidas, alinhado à esquerda */
+.vidas {
+	float: left; /* Alinha o elemento à esquerda */
+}
+
+/* Estilos para o elemento do cronômetro, alinhado à esquerda */
+.cronometro {
+	float: left; /* Alinha o elemento à esquerda */
+	font-size: 20px; /* Tamanho da fonte */
+	font-weight: bold; /* Texto em negrito */
+}
